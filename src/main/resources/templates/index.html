@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Auto Films | Inicio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/typography.css" />
+    <link rel="stylesheet" href="/css/colors.css" />
   </head>
   <body>
     <header th:replace="components/header::header"></header>
-    <h1>asdas</h1>
-    <p>rama develop</p>
+    <div class="relative h-screen select-none">
+      <div class="absolute inset-0">
+        <img
+          src="/svg/fondo.svg"
+          alt="Background Image"
+          class="object-cover object-center w-full h-full"
+        />
+        <!-- <div class="absolute inset-0 bg-black opacity-50"></div> -->
+      </div>
+
+      <div
+        class="relative z-10 flex flex-col justify-center items-center h-full text-center"
+      >
+        <h1 class="text-5xl font-bold leading-tight mb-4">
+          Welcome to Our Awesome Website
+        </h1>
+      </div>
+    </div>
+
     <footer th:replace="components/footer::footer"></footer>
   </body>
 </html>

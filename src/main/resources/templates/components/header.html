@@ -6,22 +6,38 @@
     <title>Document</title>
   </head>
   <body>
-    <header th:fragment="header" class="w-full">
+    <header th:fragment="header" class="absolute w-full z-20">
       <nav
-        class="flex justify-between items-center max-w-screen-2xl w-11/12 mx-auto py-3"
+        class="flex justify-between items-center max-w-screen-2xl w-11/12 mx-auto py-5"
       >
         <div class="flex items-center space-x-6">
-          <a th:href="@{/}">Inicio</a>
-          <a th:href="@{/pages/estrenos/estrenosPage}">Estrenos</a>
-          <a th:href="@{/pages/cartelera/carteleraPage}">Cartelera</a>
-          <a th:href="@{/pages/direcciones/direccionesPage}">Direcciones</a>
+          <a
+            class="text-[#b3b3b3] text-montserrat hover:scale-105 hover:text-[#C80D2C] hover:font-semibold hover:transition-all duration-500"
+            th:href="@{/}"
+            >Inicio</a
+          >
+          <a
+            class="text-[#b3b3b3] text-montserrat"
+            th:href="@{/pages/estrenos/estrenosPage}"
+            >Estrenos</a
+          >
+          <a
+            class="text-[#b3b3b3] text-montserrat"
+            th:href="@{/pages/cartelera/carteleraPage}"
+            >Cartelera</a
+          >
+          <a
+            class="text-[#b3b3b3] text-montserrat"
+            th:href="@{/pages/direcciones/direccionesPage}"
+            >Direcciones</a
+          >
         </div>
-        <h1 class="font-bold text-2xl">
+        <h1 class="font-bold text-3xl text-white">
           Auto<b class="text-[#C80D2C]">film</b>
         </h1>
         <div class="flex items-center space-x-6">
-          <a href="">Iniciar sesión</a>
-          <a href="">Registrarse</a>
+          <a href="" class="acolor">Iniciar sesión</a>
+          <a href="" class="acolor">Registrarse</a>
         </div>
       </nav>
     </header>
