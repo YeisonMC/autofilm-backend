@@ -10,9 +10,9 @@ import lombok.Data;
 @Entity
 @Data
 @AllArgsConstructor
-public class roles {
+public class categoriascomida {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int role_id;
-    private String nombre_rol;
+    private int categoria_id;
+    private String nombre_categoria;
 }
